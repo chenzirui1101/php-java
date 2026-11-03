@@ -295,7 +295,7 @@ server: {
 ```nginx
 server {
     listen 80;
-    server_name www.cqh4u.cn;
+    server_name www.xxx.cn;
 
     root /var/www/chaoyoung/dist;
     index index.html;
