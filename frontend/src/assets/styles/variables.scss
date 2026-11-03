@@ -1,0 +1,28 @@
+// 颜色变量
+$primary-color: #409eff; // 主题色
+$success-color: #67c23a; // 成功色
+$warning-color: #e6a23c; // 警告色
+$danger-color: #f56c6c; // 危险色
+$info-color: #909399;    // 信息色
+
+// 布局变量
+$header-height: 60px;    // 头部高度
+$sidebar-width: 200px;   // 侧边栏宽度
+$footer-height: 40px;    // 底部高度
+
+// 字体变量
+$font-size-xs: 12px;     // 超小字体
+$font-size-sm: 14px;     // 小字体
+$font-size-md: 16px;     // 中字体
+$font-size-lg: 18px;     // 大字体
+$font-size-xl: 20px;     // 超大字体
+
+// 边框变量
+$border-radius: 4px;     // 圆角
+$border-color: #e6e6e6;  // 边框色
+$border-width: 1px;      // 边框宽度
+
+// 阴影变量
+$shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1); // 小阴影
+$shadow-md: 0 4px 8px rgba(0, 0, 0, 0.1); // 中阴影
+$shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.1); // 大阴影

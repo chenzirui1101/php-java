@@ -1,0 +1,28 @@
+# ===== 依赖与构建产物 =====
+node_modules/
+dist/
+target/
+vendor/
+
+# ===== IDE / 操作系统 =====
+.idea/
+*.iml
+.vscode/
+.DS_Store
+
+# ===== 环境变量与真实配置（禁止入库） =====
+.env
+.env.local
+.env.*
+!.env.example
+!.env.*.example
+
+# 后端真实环境配置（保留 application-dev.example.yml 模板）
+backend/src/main/resources/application-dev.yml
+backend/src/main/resources/application-prod.yml
+
+# ===== 用户上传文件 =====
+backend/uploads/
+
+# ===== 日志 =====
+*.log

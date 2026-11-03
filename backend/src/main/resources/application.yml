@@ -1,0 +1,49 @@
+server:
+  port: 8080
+  shutdown: graceful
+
+spring:
+  application:
+    name: chaoyoung-backend
+  profiles:
+    active: ${SPRING_PROFILES_ACTIVE:dev}
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 50MB
+  jackson:
+    default-property-inclusion: non_null
+    time-zone: Asia/Shanghai
+    serialization:
+      write-dates-as-timestamps: false
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+  global-config:
+    banner: false
+    db-config:
+      id-type: auto
+      logic-delete-field: deletedAt
+      logic-delete-value: now()
+      logic-not-delete-value: "null"
+
+app:
+  # 用户上传图片的根目录，对应 Laravel 的 storage/app/public
+  upload-dir: ${UPLOAD_DIR:./uploads}
+  jwt:
+    # 生产环境请通过 JWT_SECRET 环境变量覆盖，HS256 要求密钥不少于 32 字节
+    secret: ${JWT_SECRET:chaoyoung-jwt-secret-key-2026-please-change-in-production-0123456789}
+    # token 有效期（毫秒），默认 7 天
+    expiration: ${JWT_EXPIRATION:604800000}
+  security:
+    ticket:
+      # 一次性通行证有效期（秒）
+      ttl-seconds: ${TICKET_TTL_SECONDS:60}
+  rate-limit:
+    # 单 IP 每分钟最大请求数
+    max-requests: 60
+    window-seconds: 60
+  moderation:
+    # 模拟敏感词库，真实场景替换为 AI/内容安全接口
+    sensitive-words: 赌博,毒品,色情,暴力,诈骗,代考,枪支,杀人,傻逼,法轮功

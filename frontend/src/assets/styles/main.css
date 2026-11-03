@@ -1,0 +1,41 @@
+/* 全局样式重置 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+}
+
+/* 确保链接样式正确 */
+a {
+  color: #FF8A5C;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #E06E3E;
+  text-decoration: underline;
+}
+
+/* 确保按钮样式正确 */
+.btn {
+  border-radius: 0.25rem;
+  transition: all 0.15s ease-in-out;
+}
+
+/* 确保卡片样式正确 */
+.card {
+  border-radius: 0.25rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  transition: box-shadow 0.15s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}

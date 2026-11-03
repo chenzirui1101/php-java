@@ -1,0 +1,141 @@
+// 全局样式重置
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// 全局字体
+html, body, #app {
+  height: 100%;
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// 全局链接样式
+a {
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    color: #409eff;
+  }
+}
+
+// 全局列表样式
+ul, li {
+  list-style: none;
+}
+
+// 全局滚动条样式
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+  &:hover {
+    background: #a8a8a8;
+  }
+}
+
+// 全局动画
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
+}
+
+// 巨幕样式
+.jumbotron-section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  transition: all 0.8s ease;
+  margin-top: -70px;
+  padding-top: 70px;
+}
+
+.jumbotron-section .card {
+  border: 2px solid transparent;
+  background: linear-gradient(white, white) padding-box, linear-gradient(45deg, #FF8A5C, #FFD93D, #FF8A5C) border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+.jumbotron-section .card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent, rgba(255, 138, 92, 0.3), transparent);
+}
+
+.jumbotron-section .card-body {
+  padding: 40px;
+}
+
+.jumbotron-section h1 {
+  font-size: 3.5rem;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, #FF8A5C, #FFD93D);
+  margin-bottom: 24px;
+  font-weight: bold;
+}
+
+.jumbotron-section p {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  margin-bottom: 32px;
+  color: #666;
+}
+
+.jumbotron-section .img-fluid {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+// 纸飞机样式
+#paperPlane {
+  position: absolute;
+  width: 150px;
+  height: auto;
+  z-index: 1000;
+  pointer-events: none;
+  opacity: 1;
+  top: 50px;
+  left: 18.75%;
+}
+
+// 边框流光动画
+@keyframes borderGlow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

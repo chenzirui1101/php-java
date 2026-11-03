@@ -1,0 +1,89 @@
+:root {
+  /* 主色系 */
+  --color-primary: #FF8A5C;
+  --color-primary-light: #FFA07A;
+  --color-primary-dark: #E06E3E;
+  
+  /* 辅助色系 */
+  --color-secondary-yellow: #FFD93D;
+  --color-secondary-green: #6BCB77;
+  --color-secondary-blue: #4D96FF;
+  
+  /* 背景色 */
+  --color-background-light: #F9F9F9;
+  --color-background-white: #FFFFFF;
+  
+  /* 文字色 */
+  --color-text-primary: #2E2E2E;
+  --color-text-secondary: #6B6B6B;
+  
+  /* 渐变色 */
+  --gradient-primary: linear-gradient(135deg, #FF8A5C, #FFD93D);
+}
+
+/* 文本颜色类 */
+.text-primary {
+  color: var(--color-primary) !important;
+}
+
+.text-secondary-yellow {
+  color: var(--color-secondary-yellow) !important;
+}
+
+.text-secondary-green {
+  color: var(--color-secondary-green) !important;
+}
+
+.text-secondary-blue {
+  color: var(--color-secondary-blue) !important;
+}
+
+.text-text-primary {
+  color: var(--color-text-primary) !important;
+}
+
+.text-text-secondary {
+  color: var(--color-text-secondary) !important;
+}
+
+/* 背景颜色类 */
+.bg-primary {
+  background-color: var(--color-primary) !important;
+}
+
+.bg-background-light {
+  background-color: var(--color-background-light) !important;
+}
+
+.bg-background-white {
+  background-color: var(--color-background-white) !important;
+}
+
+/* 边框颜色类 */
+.border-orange {
+  border-color: var(--color-primary) !important;
+}
+
+/* 按钮样式 */
+.btn-orange {
+  background: var(--gradient-primary) !important;
+  border: none !important;
+  color: white !important;
+}
+
+.btn-orange:hover {
+  opacity: 0.9 !important;
+}
+
+/* 浮动动画 */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-8px) rotate(-2deg);
+  }
+  75% {
+    transform: translateY(8px) rotate(2deg);
+  }
+}
