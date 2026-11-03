@@ -252,7 +252,7 @@ VITE_APP_TITLE='毕业作品-开发环境'
 
 ```ini
 # 生产环境：直接请求线上域名
-VITE_API_BASE_URL=https://www.cqh4u.cn
+VITE_API_BASE_URL=/
 VITE_APP_TITLE='潮青行-毕业作品'
 ```
 
